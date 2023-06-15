@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="android-chrome-512x512.png" type="image/x-icon">
+    <title>News Latest</title>
+</head>
+<body>
+    <nav>
+        <div class="main-nav container flex">
+            <a href="#" onclick="reload()" class="companylogo">
+                <img src="news.png" alt="company logo"  width="100px">
+            </a>
+            <div class="nav-links">
+                <ul class="flex">
+                    <li class="hover-link nav-item" id="ipl" onclick="navitemclicked('ipl')">IPL</li>
+                    <li class="hover-link nav-item" id="science" onclick="navitemclicked('science')">Science</li>
+                    <li class="hover-link nav-item" id="politics" onclick="navitemclicked('politics')">Politics</li>
+                </ul>
+            </div>
+            <div class="search-bar flex " id="search-bar">
+                <input type="text" id="search-text" class="news-input" placeholder="eg:- Sceince">
+                <button class="search-btn" id="search-button">Search</button>
+            </div>
+        </div>
+    </nav>
+    <main>
+        <div class=" card-container container flex" id="card-container">
+        
+        </div>
+    </main>
+    <template id="template-card">
+        <div class="card">
+            <img src="https://via.placeholder.com/400x200" class="card-img" alt="news image" id="news-image">
+            <div class="card-body">
+                <h4 id="newstitle"> title</h4>
+                <h6 id="news-source"> hello</h6>
+                <p class="card-text" id="news-content">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                
+            </div>
+        </div>
+    </template>
+
+    <script src="index.js"></script>
+</body>
+</html>
